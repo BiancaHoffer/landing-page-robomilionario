@@ -7,9 +7,16 @@ export const ContainerBanner = styled.div`
   background-size: 80rem;
   background-position: bottom center; 
 
-  @media (max-width: 720px) {
-   height: 100vh;
+  /*@media (max-width: 720px) {
+   background-image: url('/images/money.png');
+   background-repeat: repeat;
+   background-size: cover;
+   background-position: center center; 
   }
+
+  @media (max-width: 920px) {
+   height: 100vh;
+  }*/
 `
 
 export const ContentBanner = styled.div`

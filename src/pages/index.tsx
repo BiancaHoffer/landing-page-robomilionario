@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <meta name="viewport" content="viewport-fit=cover" />
+
         <title>Rôbo Milionário</title>
       </Head>
 
