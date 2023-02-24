@@ -5,7 +5,7 @@ import { ContainerButtonBuy } from "./styles";
 export function ButtonBuy() {
   return (
     <ContainerButtonBuy>
-      <Link href="*">
+      <Link href="https://app.monetizze.com.br/r/AZW8291094?u=c&pl=EX135769">
         Quero me inscrever
       </Link>
 

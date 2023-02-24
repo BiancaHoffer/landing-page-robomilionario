@@ -23,7 +23,7 @@ export const ContainerCards = styled.div`
 
   
   
-  @media (max-width: 720px) {
+  @media (max-width: 820px) {
     flex-direction: column;
   }
 `

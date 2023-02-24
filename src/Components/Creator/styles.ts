@@ -10,6 +10,9 @@ export const ContainerCreator = styled.div`
 
   div {
     padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &:nth-child(2) {
       width: 100%;
@@ -18,7 +21,7 @@ export const ContainerCreator = styled.div`
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      padding: 2rem 6rem;
+      padding: 2rem 4rem;
     }
 
     img {
@@ -40,9 +43,13 @@ export const ContainerCreator = styled.div`
     }
   }
 
-  @media (max-width: 720px) {
+  @media (max-width: 1020px) {
    flex-direction: column-reverse;
    align-items: center;
-   padding: 3rem;
+   padding: 1rem;
+
+   img {
+      width: 50%;
+    }
   }
 `

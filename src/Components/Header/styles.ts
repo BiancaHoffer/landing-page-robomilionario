@@ -41,7 +41,7 @@ export const LinkScroll = styled(Link)`
   }
 
   &:hover {
-    color: gray;
+    color: ${props => props.theme["purple-300"]};
     transition: color 0.3s;
   }
 `

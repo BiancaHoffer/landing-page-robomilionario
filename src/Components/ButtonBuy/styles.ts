@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { Link } from "react-scroll"
-
 export const ContainerButtonBuy = styled.div`
   display: flex;
   flex-direction: column;

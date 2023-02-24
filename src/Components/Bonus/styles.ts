@@ -26,7 +26,7 @@ export const ContentCardBonus = styled.div`
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
 
-  @media (max-width: 720px) {
+  @media (max-width: 820px) {
     grid-template-columns: 1fr;
     gap: 1rem;
   }

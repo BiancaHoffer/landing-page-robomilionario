@@ -31,7 +31,7 @@ export const ContainerSummary = styled.div`
   gap: 14rem;
   
 
-  @media (max-width: 720px) {
+  @media (max-width: 1020px) {
     grid-template-columns: 1fr;
     gap: 1rem;
   }

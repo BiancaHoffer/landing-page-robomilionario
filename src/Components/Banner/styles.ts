@@ -1,22 +1,27 @@
 import styled from "styled-components";
 
 export const ContainerBanner = styled.div`
-  height: 150vh;
+  @media (max-width: 720px) {
+   background-image: url('/images/money.png');
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+`
+
+export const ContentImage = styled.div`
   background-image: url('/images/banner.png');
   background-repeat: no-repeat;
-  background-size: 80rem;
+  background-size: contain;
   background-position: bottom center; 
 
-  /*@media (max-width: 720px) {
-   background-image: url('/images/money.png');
-   background-repeat: repeat;
-   background-size: cover;
-   background-position: center center; 
-  }
+  height: 30rem;
+  width: 100%;
 
-  @media (max-width: 920px) {
-   height: 100vh;
-  }*/
+  @media (max-width: 720px) {
+    height: 0rem;
+  }
 `
 
 export const ContentBanner = styled.div`
@@ -24,8 +29,14 @@ export const ContentBanner = styled.div`
   justify-content: start;
   align-items: center;
   flex-direction: column;
-  position: relative;
-  top: 12rem;
+  padding-top: 12rem;
+
+  @media (max-width: 720px) {
+   height: 100%;
+   justify-content: center;
+   position: static;
+   padding-top: 0rem;
+  }
 
   h1 {
     text-align: center;
