@@ -17,7 +17,6 @@ export const ContainerCardAbout = styled.div<ContainerCardAboutProps>`
 
    height: 22rem;
    width: 18rem;
-   //align-items: center;
    display: flex;
    flex-direction: column;
 
@@ -42,4 +41,8 @@ export const ContainerCardAbout = styled.div<ContainerCardAboutProps>`
     font-size: 2rem;
     text-align: center;
    }
+
+   @media (max-width: 720px) {
+    width: 22rem;
+  }
 `

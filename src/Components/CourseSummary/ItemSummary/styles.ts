@@ -5,7 +5,11 @@ export const ContainerItemSummary = styled.p`
     align-items: center;
     gap: 1rem;
     font-size: 1.6rem;
-    padding: 2rem 0rem;
+    padding: 2rem;
     text-align: justify;
     border-bottom: 1px solid ${props => props.theme["purple-300"]};
+
+    @media (max-width: 720px) {
+        padding: 2rem 4rem;
+    }
 `

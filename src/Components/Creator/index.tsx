@@ -2,9 +2,9 @@ import { ContainerCreator } from "./styles";
 
 export function Creator() {
   return (
-    <ContainerCreator>
+    <ContainerCreator id="creator">
       <div>
-        <img src="/images/joao.jpg" alt="" />
+        <img src="/images/joao.jpg" />
       </div>
       <div>
         <h3>Quem é o criador do Rôbo Milionário?
@@ -17,6 +17,6 @@ export function Creator() {
         <p>Você deve se perguntar: Mas por que ele ensina esse método ao invés de guardar segredo já que dá tanto dinheiro?</p>
         <p>E a resposta é que o mercado é muito grande e está totalmente inexplorado.</p>
       </div>
-    </ContainerCreator>
+    </ContainerCreator >
   )
 }

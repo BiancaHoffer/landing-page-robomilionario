@@ -1,4 +1,4 @@
-import { ItemSummary } from "./ItemSummary/intex";
+import { ItemSummary } from "./ItemSummary";
 import { ContainerCourseSummary, ContainerSummary, ContentCourseSummary } from "./styles";
 
 export function CourseSummary() {

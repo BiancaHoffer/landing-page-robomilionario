@@ -22,7 +22,7 @@ export const ContainerCreator = styled.div`
     }
 
     img {
-      max-width: 90%;
+      max-width: 100%;
     }
 
     h3 {
@@ -38,5 +38,11 @@ export const ContainerCreator = styled.div`
       font-size: 1.5rem;
       text-align: justify;
     }
+  }
+
+  @media (max-width: 720px) {
+   flex-direction: column-reverse;
+   align-items: center;
+   padding: 3rem;
   }
 `

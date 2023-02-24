@@ -2,9 +2,8 @@ import styled from "styled-components";
 
 export const ContainerCardBonus = styled.div`
   background-color: ${props => props.theme["purple-700"]};
-  //height: 30rem;
   border-radius: 4px;
-  width: 100%;
+  max-width: 100%;
   padding: 3rem 4rem ;
 
   display: flex;

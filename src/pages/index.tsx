@@ -1,24 +1,48 @@
+import Head from 'next/head';
+import { useEffect, useState } from 'react';
 import { About } from '@/Components/About';
 import { Banner } from '@/Components/Banner';
 import { Bonus } from '@/Components/Bonus';
 import { CourseSummary } from '@/Components/CourseSummary';
 import { Creator } from '@/Components/Creator';
 import { Header } from '@/Components/Header';
-import Head from 'next/head';
+import { BuyCourse } from '@/Components/BuyCourse';
+import { Footer } from '@/Components/Footer';
 
 export default function Home() {
+  const [scrollActive, setScrollAtvite] = useState(false);
+
+  useEffect(() => {
+    function scrollPosition() {
+      if (window.scrollY > 20) {
+        setScrollAtvite(true)
+      } else (
+        setScrollAtvite(false)
+      )
+    }
+
+    window.addEventListener('scroll', scrollPosition)
+  }, [])
+
   return (
     <>
       <Head>
-        <title>Criando no Figma</title>
+        <meta name="viewport" content="viewport-fit=cover" />
+        <title>Rôbo Milionário</title>
       </Head>
 
-      <Header />
-      <Banner />
-      <About />
-      <CourseSummary />
-      <Bonus />
-      <Creator />
+      <Header activeColorScroll={scrollActive} />
+
+      <main>
+        <Banner />
+        <About />
+        <CourseSummary />
+        <Bonus />
+        <Creator />
+        <BuyCourse />
+      </main>
+
+      <Footer />
     </>
   )
 }

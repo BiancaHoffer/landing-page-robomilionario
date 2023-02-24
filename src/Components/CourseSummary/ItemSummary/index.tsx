@@ -8,9 +8,11 @@ interface ItemSummaryProps {
 export function ItemSummary({ text }: ItemSummaryProps) {
   return (
     <ContainerItemSummary>
-      <div>
+      <span>
         <Check size={30} color="#8E89FF" />
-      </div>
+      </span>
+
+
       {text}
     </ContainerItemSummary>
   )

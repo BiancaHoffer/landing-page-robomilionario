@@ -17,11 +17,11 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body::-webkit-scrollbar-track {
-      background: var(--gray-100);     
+      background: ${props => props.theme['purple-900']};     
     }
 
     body::-webkit-scrollbar-thumb {
-      background-color: var(--gray-800);
+      background-color: ${props => props.theme['purple-300']};
     }
 
     body, input, textarea, button {

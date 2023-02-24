@@ -3,9 +3,8 @@ import { ContainerBonus, ContentCardBonus } from "./styles";
 
 export function Bonus() {
   return (
-    <ContainerBonus>
+    <ContainerBonus id="bonus">
       <h2><strong>+ 10 BÔNUS EXCLUSIVOS PARA VOCÊ</strong> <br />  SE INSCREVER HOJE!</h2>
-
       <ContentCardBonus>
         <CardBonus title="Template de alta conversão" text="Você terá acesso a um modelo de robô que me fez gerar mais de R$1.000.000,00 em vendas, se você fosse pagar algum profissional para fazer esse template pra você, iria custar pelo menos R$5.000,00 e hoje você vai ser seu de graça! Com esse template basta você copiar e colar e ver os resultados aparecerem" />
         <CardBonus title="Auas ao vivo em grupo" text="Você e todos os outros alunos terão uma aula ao vivo comigo em grupo em uma sala online e poderão tirar todas as suas dúvidas sobre o conteúdo, essa aula acontece mensalmente. Como eu já disse, o valor da minha consultoria é de R$10.000,00 por mês, então imagine o valor deste bônus!" />

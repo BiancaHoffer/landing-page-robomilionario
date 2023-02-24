@@ -6,6 +6,10 @@ export const ContainerBanner = styled.div`
   background-repeat: no-repeat;
   background-size: 80rem;
   background-position: bottom center; 
+
+  @media (max-width: 720px) {
+   height: 100vh;
+  }
 `
 
 export const ContentBanner = styled.div`
@@ -20,25 +24,13 @@ export const ContentBanner = styled.div`
     text-align: center;
     font-family: 'Anton', sans-serif;
     font-size: 4.5rem;
+    margin-bottom: 4rem;
+    padding: 0 2rem;
   }
 
-  a {
-    background: ${props => props.theme["purple-500"]};
-    width: 30rem;
-    height: 6rem;
-    border-radius: 4px;
-    font-size: 2rem;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 4rem;
-  }
-
-  span {
-    margin-top: 0.8rem;
-    display: flex;
-    align-items: center;
-    gap: 0.3rem;
+  @media (max-width: 720px) {
+    h1 {
+      font-size: 3rem;
+    }
   }
 `
