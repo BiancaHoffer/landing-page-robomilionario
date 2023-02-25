@@ -26,7 +26,7 @@ export const ContainerButtonBuy = styled.div`
 
     @media (max-width: 400px) {
       padding: 1rem 6rem;
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
   }
 
