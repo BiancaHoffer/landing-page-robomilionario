@@ -3,13 +3,18 @@ import styled from "styled-components";
 export const ContainerCreator = styled.div`
   background-color: white;
   background-image: url('/images/money.png');
-  margin-top: 8rem;
   display: flex;
+  align-items: center;
+  gap: 3rem;
   justify-content: space-between;
-  gap: 1rem;
+  padding: 3rem;
+  margin-top: 12rem;
+
+  @media (max-width: 1120px) {
+    flex-direction: column-reverse;
+  }
 
   div {
-    padding: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,35 +26,34 @@ export const ContainerCreator = styled.div`
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      padding: 2rem 4rem;
     }
+
+   
 
     img {
-      max-width: 100%;
+      width: 80%;
+
+      @media (max-width: 1120px) {
+        max-width: 60%;
+      }
     }
 
-    h3 {
+    h2 {
       color: ${props => props.theme["purple-300"]};
       font-weight: bold;
-      font-size: 2rem;
+      font-size: 2.5rem;
       text-align: center;
-      letter-spacing: 0.5rem;
+      margin-bottom: 2rem;
     }
 
     p {
       color: gray;
       font-size: 1.5rem;
       text-align: justify;
-    }
-  }
 
-  @media (max-width: 1020px) {
-   flex-direction: column-reverse;
-   align-items: center;
-   padding: 1rem;
-
-   img {
-      width: 50%;
+      @media (max-width: 1120px) {
+        text-align: center;
+      }
     }
-  }
+  } 
 `

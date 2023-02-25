@@ -3,27 +3,20 @@ import styled from "styled-components";
 export const ContainerAbout = styled.div`
   background-color: ${props => props.theme["purple-700"]};
   width: 100%;
-  padding: 12rem  0 6rem 0;
+  padding: 12rem 3rem 0 3rem;
 `
-
 export const ContentAbout = styled.div`
-   max-width: 1200px;
-   padding: 0 60px 0 60px;
-   margin: 0 auto;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-direction: column;
-`
+  max-width: 1200px; 
+  margin: 0 auto;
 
-export const ContainerCards = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 
-  
-  
-  @media (max-width: 820px) {
-    flex-direction: column;
+  @media (max-width: 1020px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
   }
 `

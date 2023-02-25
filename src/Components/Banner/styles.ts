@@ -1,54 +1,50 @@
 import styled from "styled-components";
 
 export const ContainerBanner = styled.div`
-  @media (max-width: 720px) {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  @media (max-width: 600px) {
    background-image: url('/images/money.png');
    height: 100vh;
    display: flex;
    justify-content: center;
    align-items: center;
+   
+    section:nth-child(2) {
+      display: none;
+    }
   }
-`
 
-export const ContentImage = styled.div`
-  background-image: url('/images/banner.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom center; 
-
-  height: 30rem;
-  width: 100%;
-
-  @media (max-width: 720px) {
-    height: 0rem;
+  section {
+    max-width: 1200px;
   }
-`
 
-export const ContentBanner = styled.div`
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 12rem;
-
-  @media (max-width: 720px) {
-   height: 100%;
-   justify-content: center;
-   position: static;
-   padding-top: 0rem;
+  section:nth-child(2) {
   }
 
   h1 {
     text-align: center;
     font-family: 'Anton', sans-serif;
     font-size: 4.5rem;
-    margin-bottom: 4rem;
-    padding: 0 2rem;
+    padding: 6rem 3rem 3rem;
+
+    @media (max-width: 600px) {
+      font-size: 3.5rem;
+      padding: 2rem;
+    }
+
+    @media (max-width: 400px) {
+      font-size: 2.5rem;
+    }
   }
 
-  @media (max-width: 720px) {
-    h1 {
-      font-size: 3rem;
-    }
+  img {
+    margin-top: -8rem;
+    z-index: -3;
+    position: relative;
+    width: 100%;
   }
 `

@@ -12,13 +12,12 @@ const colors = {
 
 export const ContainerCardAbout = styled.div<ContainerCardAboutProps>`
    ${props => css`
-    background-color: ${colors[props.variant]};
+      background-color: ${colors[props.variant]};
    `};
 
-   height: 22rem;
-   width: 18rem;
    display: flex;
    flex-direction: column;
+   padding: 1rem;
 
    span {
     position: relative;
@@ -40,9 +39,6 @@ export const ContainerCardAbout = styled.div<ContainerCardAboutProps>`
    p {
     font-size: 2rem;
     text-align: center;
+    padding: 0rem 3rem;
    }
-
-   @media (max-width: 720px) {
-    width: 22rem;
-  }
 `

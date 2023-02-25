@@ -1,27 +1,26 @@
 import styled from "styled-components";
 
 export const ContainerBonus = styled.div`
-   max-width: 1200px;
-   padding: 0 60px 0 60px;
-   margin: 0 auto;
-   padding: 6rem 0;
+   max-width: 100%;
+   padding: 12rem 3rem 0 3rem;
+`
 
-   h2 {
-    margin-bottom: 6rem;
-    align-self: flex-start;
-    text-transform: uppercase;
-    letter-spacing: 0.5rem;
+export const ContentBonus = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
+
+  h2 {
     text-align: center;
-    width: 100%;
-   
+    font-size: 2.5rem;
+    margin-bottom: 6rem;
 
     strong {
       color: ${props => props.theme["purple-300"]};
     }
-   }
+  }
 `
 
-export const ContentCardBonus = styled.div`
+export const ContentCards = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;

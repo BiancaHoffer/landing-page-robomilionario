@@ -1,33 +1,37 @@
 import styled from "styled-components";
 
+
 export const ContainerBuyCourse = styled.div`
+   max-width: 100%;
+   padding: 12rem 3rem;
+`
+
+export const ContentBuyCourse = styled.div`
   max-width: 1200px;
-  padding: 0 60px 0 60px;
   margin: 0 auto;
-  padding: 6rem 2rem;
 
   h2 {
-    width: 100%;
-    text-align: center;
-    letter-spacing: 0.5rem;
     color: ${props => props.theme["purple-300"]};
-    margin-top: 6rem;
-    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
   }
 
   > p {
     width: 100%;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 
-  div {
+  .section-values {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 4rem 0rem;
+    margin: 3rem 0rem 0rem 0rem;
+    text-align: center;
 
     h3 {
       font-size: 4rem;

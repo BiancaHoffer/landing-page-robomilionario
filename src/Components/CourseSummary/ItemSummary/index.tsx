@@ -11,8 +11,6 @@ export function ItemSummary({ text }: ItemSummaryProps) {
       <span>
         <Check size={30} color="#8E89FF" />
       </span>
-
-
       {text}
     </ContainerItemSummary>
   )

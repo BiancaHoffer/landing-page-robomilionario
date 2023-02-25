@@ -61,15 +61,9 @@ export const GlobalStyle = createGlobalStyle`
       }
     }
 
-    @media (max-width: 620px) {
+    @media (max-width: 420px) {
       html {
-        font-size: 70%;
-      }
-    }
-
-    @media (max-width: 320px) {
-      html {
-        font-size: 50%;
+        font-size: 76.5%;
       }
     }
 `;
