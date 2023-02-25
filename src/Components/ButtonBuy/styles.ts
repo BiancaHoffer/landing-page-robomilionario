@@ -22,11 +22,13 @@ export const ContainerButtonBuy = styled.div`
     &:hover {
       opacity: 0.9;
       transition: opacity 0.3s;
+      
     }
 
-    @media (max-width: 400px) {
-      padding: 1rem 6rem;
-      font-size: 1rem;
+    @media (max-width: 420px) {
+      padding: 1rem 4rem;
+      font-size: 1.4rem;
+      //padding: 1rem 1rem;
     }
   }
 
